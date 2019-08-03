@@ -1,3 +1,6 @@
+/**
+ * 绘制接口
+ */
 package com.neuedu.base;
 
 import java.awt.Graphics;
