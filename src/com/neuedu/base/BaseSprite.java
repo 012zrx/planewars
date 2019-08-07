@@ -11,11 +11,9 @@ public abstract class BaseSprite {
     private int x;
     private int y;
 
-
     //无参构造函数
     public BaseSprite() {
     }
-
     //全参构造函数
     public BaseSprite(int x, int y) {
         this.x = x;
@@ -43,7 +41,5 @@ public abstract class BaseSprite {
     public Rectangle getRectangle() {
         return null;
     }
-
-
 }
 

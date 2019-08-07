@@ -36,8 +36,6 @@ public class EnemyPlane extends BaseSprite implements Moveable, Drawable {
         this.image = image;
     }
 
-
-
     @Override
     public void draw(Graphics g) {
         move();
@@ -85,7 +83,7 @@ public class EnemyPlane extends BaseSprite implements Moveable, Drawable {
             gameFrame.enemyPlaneList.remove(this);
             gameFrame.magic_hp--;
             if (gameFrame.hp <= 100 && gameFrame.hp >=0) {
-                gameFrame.hp -= 5;
+                gameFrame.hp -= 3;
             }
         }
     }

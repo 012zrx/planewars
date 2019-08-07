@@ -48,8 +48,6 @@ public class Supplier extends BaseSprite implements Moveable, Drawable {
                 null);
     }
 
-
-
     public void fire() {
         GameFrame gameFrame = DataStore.get("gameFrame");
         if (random.nextInt(1000) > 990) {
@@ -82,13 +80,5 @@ public class Supplier extends BaseSprite implements Moveable, Drawable {
     }
 
    //补给飞机不需要碰撞
-
-
-
-
-
-
-
-
 
 }

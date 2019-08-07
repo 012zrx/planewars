@@ -14,7 +14,6 @@ public class DataStore {
         map.put(key, value);
     }
 
-
     //泛型方法
     public static <T> T get(String key) {
         return (T) map.get(key);

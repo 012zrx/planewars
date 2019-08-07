@@ -53,7 +53,6 @@ public class Magic extends BaseSprite implements Moveable, Drawable {
 
     @Override
     public void move() {
-//        setX(getX() + speed);
         setY(getY() + speed);
         borderTesting();
     }
@@ -64,7 +63,7 @@ public class Magic extends BaseSprite implements Moveable, Drawable {
         if (plane.getRectangle().intersects(this.getRectangle())) {
             gameFrame.magicList.remove(this);
             if (gameFrame.magic_hp < 100 && gameFrame.hp > 0) {
-                gameFrame.magic_hp += 3;
+                gameFrame.magic_hp += 5;
             }
         }
     }

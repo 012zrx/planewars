@@ -67,7 +67,7 @@ public class Blood extends BaseSprite implements Moveable, Drawable {
         if (plane.getRectangle().intersects(this.getRectangle())) {
             gameFrame.bloodList.remove(this);
             if (gameFrame.hp < 100 && gameFrame.hp > 0) {
-                gameFrame.hp += 2;
+                gameFrame.hp += 5;
             }
         }
     }

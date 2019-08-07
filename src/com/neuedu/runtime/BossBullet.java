@@ -71,7 +71,7 @@ public class BossBullet extends BaseSprite implements Moveable, Drawable {
             gameFrame.bossBulletList.remove(this);
             gameFrame.magic_hp--;
             if (gameFrame.hp <= 100 && gameFrame.hp >=0) {
-                gameFrame.hp -= 10;
+                gameFrame.hp -= 5;
             }
 
         }

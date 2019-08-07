@@ -70,7 +70,7 @@ public class EnemyBullet extends BaseSprite implements Moveable, Drawable {
             gameFrame.enemyBulletList.remove(this);
             gameFrame.magic_hp--;
             if (gameFrame.hp <= 100 && gameFrame.hp >= 0) {
-                gameFrame.hp -= 6;
+                gameFrame.hp -= 2;
             }
 
         }

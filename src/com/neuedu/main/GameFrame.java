@@ -103,12 +103,14 @@ public class GameFrame extends Frame {
                 enemyPlaneList.add(new EnemyPlane(r.nextInt(800), 0, ImageMap.get("ep01")));
                 enemyPlaneList.add(new EnemyPlane(r.nextInt(800), 0, ImageMap.get("ep02")));
                 enemyPlaneList.add(new EnemyPlane(r.nextInt(800), 0, ImageMap.get("ep03")));
+            }
+            if(r.nextInt(1000) > 992) {
                 bombList.add(new Bomb(r.nextInt(800), 0, ImageMap.get("bomb01")));
             }
-            if (r.nextInt(1000) > 988) {
+            if (r.nextInt(1000) > 990) {
                 bloodList.add(new Blood(r.nextInt(800), 0, ImageMap.get("blood01")));
                 bloodList.add(new Blood(r.nextInt(800), 0, ImageMap.get("blood02")));
-                magicList.add(new Magic(r.nextInt(800), 0, ImageMap.get("blood03"), FrameConstant.GAME_SPEED * 3));
+                magicList.add(new Magic(r.nextInt(800), 0, ImageMap.get("blood03"), FrameConstant.GAME_SPEED * 2));
             }
 
             //画子弹
@@ -214,7 +216,7 @@ public class GameFrame extends Frame {
 
 
         //游戏结束
-        if (FrameConstant.score >= 100) {
+        if (FrameConstant.score >= 1000) {
             g.setFont(new Font("楷体", Font.BOLD, 64));
             g.setColor(new Color(189, 8, 255));
             g.drawString("恭喜通关！！！", 200, 514);

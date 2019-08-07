@@ -107,11 +107,4 @@ public class Bullet extends BaseSprite implements Moveable, Drawable {
         }
     }
 
-
-
-
-
-
-
-
 }

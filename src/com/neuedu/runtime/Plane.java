@@ -65,6 +65,8 @@ public class Plane extends BaseSprite implements Moveable, Drawable {
     }
 
 
+
+
     private int index = 0;
 
     /**
@@ -83,13 +85,6 @@ public class Plane extends BaseSprite implements Moveable, Drawable {
             ));
         }
     }
-
-
-
-
-    //
-
-
     /**
      * 移动方法
      */
@@ -125,6 +120,15 @@ public class Plane extends BaseSprite implements Moveable, Drawable {
             setY(FrameConstant.FRAME_HEIGHT - image.getHeight(null));
         }
     }
+
+
+
+
+
+
+
+
+
 
 
     /*
@@ -184,10 +188,6 @@ public class Plane extends BaseSprite implements Moveable, Drawable {
         gameFrame.magicList.clear();
         }
     }
-
-
-
-
 
     @Override
     public Rectangle getRectangle() {
